@@ -6,6 +6,6 @@ var router = express_1.Router();
 //REST API routes
 router.get('/api/transactions/:id', transaction_controller_1.getTransaction);
 router.get('/api/transactions', transaction_controller_1.getTransactions);
-router.post('/api/transactions', transaction_controller_1.createTransaction);
+router.post('/api/airtimePurchase', transaction_controller_1.airtimePurchase);
 router.put('/api/transactions/:id', transaction_controller_1.updateTransaction);
 exports.default = router;

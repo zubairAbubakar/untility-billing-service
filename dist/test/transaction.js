@@ -32,7 +32,7 @@ describe('Utility Billing Service API', function () {
     /**
      * Test the Airtime Purchase endpoint
      */
-    describe('POST /api/transactions', function () {
+    describe('POST /api/airtimePurchase', function () {
         it("it should test the airtime purchase", function (done) {
             var transaction = {
                 amount: "426",
@@ -43,12 +43,11 @@ describe('Utility Billing Service API', function () {
                 userId: 1
             };
             chaitest.request(server)
-                .post("/api/transactions")
+                .post("/api/airtimePurchase")
                 .send(transaction)
                 .end(function (err, response) {
                 response.should.have.status(200);
                 response.body.should.have.property('responses');
-                //response.body.responses[0].status('Sent');
                 done();
             });
         });

@@ -41,7 +41,7 @@ describe('Utility Billing Service API', () => {
     /**
      * Test the Airtime Purchase endpoint
      */
-    describe('POST /api/transactions', () =>{
+    describe('POST /api/airtimePurchase', () =>{
         it("it should test the airtime purchase", (done) => {
             const transaction = {
                 amount: "426",
@@ -52,7 +52,7 @@ describe('Utility Billing Service API', () => {
                 userId: 1
             }
             chaitest.request(server)
-                    .post("/api/transactions")
+                    .post("/api/airtimePurchase")
                     .send(transaction)
                     .end((err, response) => {
                         response.should.have.status(200);

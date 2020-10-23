@@ -2,7 +2,6 @@ import { json, Request, response, Response } from 'express'
 import { getRepository } from 'typeorm'
 import { Transaction } from '../entity/Transaction'
 import { User } from '../entity/User'
-import { airtimePurchase } from '../services/BillingService'
 
 
 const { atlabs } = require("innovation-sandbox");
@@ -36,7 +35,7 @@ export const getTransactions = async (req: Request, res: Response): Promise<Resp
  * @param req 
  * @param res 
  */
-export const createTransaction = (req: Request, res: Response)=> {
+export const airtimePurchase = (req: Request, res: Response)=> {
     
     console.log(req.body.transactionType);
     if(req.body.transactionType == 'AIRTIME_PURCHASE'){

@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.updateTransaction = exports.createTransaction = exports.getTransactions = exports.getTransaction = void 0;
+exports.updateTransaction = exports.airtimePurchase = exports.getTransactions = exports.getTransaction = void 0;
 var typeorm_1 = require("typeorm");
 var Transaction_1 = require("../entity/Transaction");
 var atlabs = require("innovation-sandbox").atlabs;
@@ -80,7 +80,7 @@ exports.getTransactions = function (req, res) { return __awaiter(void 0, void 0,
  * @param req
  * @param res
  */
-exports.createTransaction = function (req, res) {
+exports.airtimePurchase = function (req, res) {
     console.log(req.body.transactionType);
     if (req.body.transactionType == 'AIRTIME_PURCHASE') {
         var serviceUrl = '/atlabs/airtime/send';
