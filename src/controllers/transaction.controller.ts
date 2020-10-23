@@ -31,7 +31,7 @@ export const getTransactions = async (req: Request, res: Response): Promise<Resp
 };
 
 /**
- * Save a transaction
+ * Airtime purchase endpoint
  * @param req 
  * @param res 
  */

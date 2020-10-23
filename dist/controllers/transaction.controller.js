@@ -76,7 +76,7 @@ exports.getTransactions = function (req, res) { return __awaiter(void 0, void 0,
     });
 }); };
 /**
- * Save a transaction
+ * Airtime purchase endpoint
  * @param req
  * @param res
  */
