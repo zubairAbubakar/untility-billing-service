@@ -53,12 +53,3 @@ Content-Type:			application/json
     "userId": 1
 }
 ```
-
-### Requirements not covered 
-Cable Tv and ELectricty payment endpoint not implemented as the FSI sandbox doesn't currently have those payment options. 
-
-### Issues you have faced
-I wasn't able to locate Cable Tv and ELectricty payment endpoints on the FSI sandbox documentation. 
-
-### Constructive feedback for improving the assignment.
-All API/endpoints on the FSI sandbbox to be used in assignment should be reviewed and made available on the documentation.  
